@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PixelTwin – Privacy Policy</title>
+    <meta name="description" content="Privacy policy of the PixelTwin – Pixel Perfect Overlay Chrome extension." />
+    <style>
+      :root {
+        --bg: #f7f7f9;
+        --card: #ffffff;
+        --text: #18181b;
+        --muted: #5f5f6b;
+        --accent: #db2777;
+        --border: #e4e4e7;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0e0e12;
+          --card: #18181d;
+          --text: #f4f4f5;
+          --muted: #a1a1aa;
+          --accent: #ec4899;
+          --border: #2a2a31;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 40px auto;
+        padding: 36px 40px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+      }
+      header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+      .logo { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; width: 34px; height: 34px; }
+      .logo span { border-radius: 4px; background: var(--accent); }
+      .logo span:nth-child(2), .logo span:nth-child(3) { opacity: 0.45; }
+      h1 { margin: 0; font-size: 26px; line-height: 1.2; }
+      h2 { margin: 32px 0 8px; font-size: 18px; }
+      p, li { color: var(--text); }
+      .meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+      .summary {
+        padding: 14px 18px;
+        border-radius: 12px;
+        background: color-mix(in srgb, var(--accent) 10%, transparent);
+        border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+      }
+      table { width: 100%; border-collapse: collapse; font-size: 15px; }
+      th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+      th { color: var(--muted); font-weight: 600; }
+      code { font: 14px ui-monospace, 'SF Mono', Menlo, monospace; }
+      a { color: var(--accent); }
+      footer { margin-top: 36px; color: var(--muted); font-size: 14px; }
+      @media (max-width: 600px) {
+        main { margin: 0; border-radius: 0; border: none; padding: 24px 18px; }
+        table, thead, tbody, tr, th, td { display: block; }
+        thead { display: none; }
+        td { border: none; padding: 2px 0; }
+        tr { padding: 10px 0; border-bottom: 1px solid var(--border); }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <h1>PixelTwin – Privacy Policy</h1>
+      </header>
+      <p class="meta">Effective date: September 25, 2026 · Publisher: Mara Solutions LLC</p>
+
+      <p class="summary">
+        <strong>In short:</strong> PixelTwin does not collect, sell or share any personal or usage data. Everything you
+        add to the extension stays in your own browser.
+      </p>
+
+      <h2>1. What PixelTwin is</h2>
+      <p>
+        PixelTwin – Pixel Perfect Overlay is a Chrome extension that overlays a design mockup on a web page so developers
+        can compare the page with the design (opacity, blend modes, split view, match score, measuring and color checks).
+      </p>
+
+      <h2>2. Data we collect</h2>
+      <p>
+        <strong>None.</strong> PixelTwin has no account system, no analytics, no advertising and no tracking code. We do
+        not receive, store or have access to any information about you, the pages you visit or how you use the extension.
+      </p>
+
+      <h2>3. Data stored on your device</h2>
+      <p>To work, the extension saves the following <strong>only in your browser's local extension storage</strong> (<code>chrome.storage.local</code>) on your device:</p>
+      <ul>
+        <li>mockup images you add, and their thumbnails;</li>
+        <li>layer settings (position, opacity, scale, rotation, folders) for each website;</li>
+        <li>the panel's position and your preferences (theme, shortcuts, defaults).</li>
+      </ul>
+      <p>
+        This data is never synced or uploaded. You can remove it at any time by deleting layers in the panel, or all of it
+        by uninstalling the extension. Files you export with “Export layers” are saved where you choose and are fully under
+        your control.
+      </p>
+
+      <h2>4. Screenshots</h2>
+      <p>
+        The “Match” and “Colors” tools take a screenshot of the visible tab, only when you use them, to compare the page with
+        your mockup. The screenshot is processed in memory on your device and discarded; it is never saved or transmitted.
+      </p>
+
+      <h2>5. Network requests</h2>
+      <p>
+        PixelTwin makes no network requests of its own. The only exception is when you choose to add a mockup from a link:
+        the extension then downloads that image directly from the address you entered. No other data is sent with that
+        request.
+      </p>
+
+      <h2>6. Permissions and why they are needed</h2>
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>activeTab</code>, <code>scripting</code></td><td>Show the PixelTwin panel on the tab where you click the toolbar icon (and reopen it after a reload if you enabled that option).</td></tr>
+          <tr><td><code>storage</code>, <code>unlimitedStorage</code></td><td>Save your layers, images and settings locally; design exports can be large.</td></tr>
+          <tr><td>Access to websites</td><td>Use PixelTwin on any site you build (localhost, staging, production), download an image from a link you provide, and capture the visible tab for Match and Colors.</td></tr>
+          <tr><td><code>clipboardRead</code> (optional)</td><td>Asked only when you click “Paste” to add an image from your clipboard.</td></tr>
+        </tbody>
+      </table>
+      <p>PixelTwin does not read, collect or change the content of the pages you visit, apart from drawing its own overlay.</p>
+
+      <h2>7. Sharing and selling data</h2>
+      <p>We do not sell, transfer or share any user data with third parties, and we do not use data for advertising, credit or lending purposes.</p>
+
+      <h2>8. Children</h2>
+      <p>PixelTwin is a developer tool and is not directed at children. It does not knowingly collect any information from anyone, including children.</p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>If this policy changes, the updated version will be published on this page with a new effective date.</p>
+
+      <h2>10. Contact</h2>
+      <p>Questions about this policy: <a href="mailto:support@example.com">support@example.com</a></p>
+
+      <footer>© 2026 Mara Solutions LLC. PixelTwin is not affiliated with Google.</footer>
+    </main>
+  </body>
+</html>
